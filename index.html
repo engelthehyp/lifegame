@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Life Game</title>
+    <style>
+      canvas {
+        border: solid;
+      }
+
+      .center {
+        margin-top: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      button {
+        background-color: black;
+        color: aliceblue;
+      }
+      button:hover {
+        background-color: aliceblue;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <canvas id="game_canvas" width="500px" height="500px"></canvas>
+      <div>
+        <div>
+          <button id="FOVbtn" onclick="changeFOV()">Show FOV</button>
+          <button id="gridbtn" onclick="changeGrid()">Show Grid</button>
+        </div>
+        <div>
+          <div id="container"></div>
+          <div id="lifeCount">lifecount</div>
+          <div id="turnCount">turncount</div>
+          <div id="totalTurnCount">totalturncount</div>
+          <div id="historicalCount">historicalCount</div>
+          <div id="grid"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="life.js"></script>
+  <script type="text/javascript" src="graphics.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</html>
